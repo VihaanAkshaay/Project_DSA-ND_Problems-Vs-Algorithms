@@ -21,10 +21,7 @@ def rotated_array_search(input_list, number, mid=0):
             begin = pivot
         elif input_list[0] > input_list[pivot]:
             end = pivot
-        #By the end of this, we can make sure
-        # that the begin and end signify the start
-        # and end of the larger continuous part of the rotated array
-
+            
     if input_list[pivot] <= number and input_list[l-1] >= number:
         begin = pivot
         end = l
