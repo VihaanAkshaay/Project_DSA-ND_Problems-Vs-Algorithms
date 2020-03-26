@@ -9,6 +9,10 @@ def rotated_array_search(input_list, number, mid=0):
     l = len(input_list)
     begin = 0
     end = l
+
+    if begin == end:
+        return -1
+
     while begin <= end:
         pivot = (begin+end) // 2
         #print('p', pivot)
@@ -21,7 +25,10 @@ def rotated_array_search(input_list, number, mid=0):
             begin = pivot
         elif input_list[0] > input_list[pivot]:
             end = pivot
-            
+        #By the end of this, we can make sure
+        # that the begin and end signify the start
+        # and end of the larger continuous part of the rotated array
+
     if input_list[pivot] <= number and input_list[l-1] >= number:
         begin = pivot
         end = l
@@ -64,3 +71,9 @@ test_function([[6, 7, 8, 1, 2, 3, 4], 8])
 test_function([[6, 7, 8, 1, 2, 3, 4], 1])
 test_function([[6, 7, 8, 1, 2, 3, 4], 10])
 print('\n')
+
+
+# Edge cases
+print('Edge Cases:')
+test_function([[], -1])
+test_function([[1], 0])
