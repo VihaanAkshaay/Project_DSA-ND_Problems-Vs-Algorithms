@@ -15,5 +15,8 @@ In this problem, the goal is to maximize the sum of the two formed number. So, t
 ## problem_4.py
 To sort the arrays with 0s, 1s and 2s, I moved all the 0s to the beginning, and 2s to the end which by default leaves the 1s in the middle. Since this was done in a single traversal, the **time complexity is O(n)** and as no extra memory was used to store data in the problem, the **space complexity is O(1)**.
 
-## problem_5.py
+## problem_5.ipynb
+This jupyter notebook contains code for building a **trie** for searching and inserting words and we attempt to autocomplete words with the trie defined. The time complexity depends on the length of the word (*a*) that is being searched for, inserted and the total number of words (*t*) making the **time complexity as O(n)**. Since we have not created any data structure that is of the size of the variable, and only have a set of fixed size pointers, the **space complexity is O(1).
+
+## problem_6.py
 
