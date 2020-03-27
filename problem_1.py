@@ -1,6 +1,8 @@
 def sqrt(number):
     front = 0
     end = number
+    if (number<0):
+        return -1
     if end == 1 or end == 0:
         return end
     while front < end:
